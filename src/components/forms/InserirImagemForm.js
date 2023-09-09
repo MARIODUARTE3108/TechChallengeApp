@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NomeDoCss from './forms.module.css'
 import * as blobServices from '../../services/blob-services';
 
 export default function InserirImagemForm() {
@@ -119,7 +120,7 @@ export default function InserirImagemForm() {
             onChange={(e) => handleImagemChange(e)} 
           />
         </div>
-        <button className="btn btn-success" type="submit">Cadastrar Notícia</button>
+        <button className={`${NomeDoCss.submit} btn btn-success`} type="submit">Cadastrar Notícia</button>
       </form>
     </div>
   );

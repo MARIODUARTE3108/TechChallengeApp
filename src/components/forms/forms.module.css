@@ -1,0 +1,24 @@
+/* É assim que se usa o css no React */
+
+.submit{
+    margin-top: 30px;
+}
+
+.container{
+    margin: 15px;
+}
+
+
+@media (max-width: 768px) {
+    /* Estilos específicos para telas menores que 768px */
+  
+    /* Ajuste do container */
+    .container {
+      margin: 15px;
+    }
+  
+    /* Ajuste do botão "enviar" */
+    .submit {
+      justify-content: center;
+    }
+  }

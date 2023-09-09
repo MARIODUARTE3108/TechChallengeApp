@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.links {
+    margin-right: 10px;
+}
+.item{
+    margin: 5px
+}
+
+.projetoNome {
+    margin-left: 10px;
+}
+
+.proj {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .proj {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Alinhar links à direita */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px; /* Espaço entre os itens de navegação */
+}
+
+/* Alinhar cadastrar conta e acessar conta à direita */
+.navbar-nav .nav-item:first-child {
+    margin-left: auto; /* Move o primeiro item para a direita */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-left: 0; /* Remove a margem à esquerda do último item */
+}

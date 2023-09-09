@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import NomeDoCss from './forms.module.css'
 import { useForm, Controller } from 'react-hook-form';
 import emailValidation from '../../validations/email-validation';
 import passwordValidation from '../../validations/password-validation';
@@ -57,7 +58,7 @@ export default function LoginForm() {
 
       <div className='mb-3'>
 
-        <label>Email:</label>
+        <label><strong>Email:</strong> </label>
         <Controller
           name="email"
           control={control}
@@ -73,7 +74,7 @@ export default function LoginForm() {
         {errors.email && <p className="error-text">{errors.email.message}</p>}
       </div>
       <div className='mb-3'>
-        <label>Senha:</label>
+        <label><strong>Senha:</strong> </label>
         <Controller
           name="senha"
           control={control}
@@ -88,7 +89,7 @@ export default function LoginForm() {
         />
         {errors.senha && <p className="error-text">{errors.senha.message}</p>}
       </div>
-      <div className='mb-3'>
+      <div className={`${NomeDoCss.submit} mb-3`}>
         <div className='d-grid'>
           <input type='submit' className='btn btn-dark' value='Acessar Projeto' />
         </div>
